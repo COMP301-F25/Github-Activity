@@ -15,39 +15,25 @@ Welcome to our collaborative Git exercise! In this activity, you will first work
 
 ---
 
-## Part 1: Individual Contribution (No Conflicts)
+## (Required) Part 1: Individual Contribution (No Conflicts)
 
-**Setup remotes (run once per local clone):**
-```bash
-# already set automatically when you clone YOUR fork
-git remote -v
+(There are helpful commands at the bottom of the instructions)
 
-# add the class repo as 'upstream'
-git remote add upstream https://github.com/<class-org-or-user>/<class-repo>.git
-git fetch upstream
-```
-
-**Keep your fork up to date (before new work):**
-```bash
-git checkout main
-git fetch upstream
-git merge --ff-only upstream/main
-git push origin main
-```
-
-1. Make a fork of this repository on your local GitHub account and clone it to your computer.  
-2. You will see folders for the morning section and the afternoon section. Choose the appropriate folder to work in.  
-3. Create a new branch named `solo/<onyen>`.  
-4. Now navigate to the `solo/` folder (unrelated to branch name). Inside it, create a new text file named `<onyen>.txt`.  
-5. Add your full name inside the file.  
-6. Stage, commit, and push your branch to your fork on GitHub.  
-7. Open a pull request **from your fork’s branch** to the **upstream repository’s `main`** with the title `solo: <onyen>`.  
+1. Make a fork of this repository by clicking the "fork" button on the website.
+2. Clone your newly created repository to your computer.
+3. You will need to set the upstream to point at the class COMP301-F25 repo.  There are helpful commands at the bottom of the instructions.
+4. You will see folders for the morning section and the afternoon section. Choose the appropriate folder to work in.  
+5. Create a new branch named `solo/<onyen>`.  
+6. Now navigate to the `solo/` folder (unrelated to branch name). Inside it, create a new text file named `<onyen>.txt`.  
+7. Add your full name inside the file.  
+8. Stage, commit, and push your branch to your fork on GitHub.  
+9. Open a pull request **from your fork’s branch** to the **upstream repository’s `main`** with the title `solo: <onyen>`.  
 
 Each student will have their own file, so there should be no conflicts in this step.
 
 ---
 
-## Part 2: Pair and Team Contribution (Designed Conflicts)
+## (optional if time) Part 2: Pair and Team Contribution (Designed Conflicts)
 
 1. Your group of 4–6 students is a **team**. Choose a unique team identifier (for example, `UNC-Alpha`, `Sharks`, `Team42`).  
 
@@ -81,7 +67,7 @@ Each student will have their own file, so there should be no conflicts in this s
 
 ---
 
-## Part 3: Conflict Resolution and Integration
+## (Optional) Part 3: Conflict Resolution and Integration
 
 1. The Integrator should create a new branch `team/<team-id>/integration` from the base on their fork.  
 2. Then, merge each pair branch into the integration branch, one by one.  
@@ -93,7 +79,7 @@ Each student will have their own file, so there should be no conflicts in this s
 
 ---
 
-## Part 4: Class Roster Pull Request
+## (Optional) Part 4: Class Roster Pull Request
 
 1. The Integrator should append the team’s final roster to the file `class-roster.md`.  
    - Add a section starting with `## <team-id>` followed by the list of pairs.  
@@ -151,6 +137,25 @@ Always remove `<<<<<<<`, `=======`, and `>>>>>>>`. Ensure the final `roster.md` 
 ## Extra Debugging Commands
 
 - `git status` — check current branch and file state.  
-- `git log` — view commit history.  
+- `git log` — view commit history.
+- `git remote -v` - view current origin and remote urls.
 
 ---
+
+**Setup remotes (run once per local clone):**
+```bash
+# already set automatically when you clone YOUR fork
+git remote -v
+
+# add the class repo as 'upstream'
+git remote add upstream https://github.com/COMP301-F25/Github-Activity.git
+git fetch upstream
+```
+
+**Keep your fork up to date (before new work):**
+```bash
+git checkout main
+git fetch upstream
+git merge --ff-only upstream/main
+git push origin main
+```
