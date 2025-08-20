@@ -17,6 +17,8 @@ Welcome to our collaborative Git exercise! In this activity, you will first work
 
 ## (Required) Part 1: Individual Contribution (No Conflicts)
 
+IntelliJ is not necessary for this activity, and it is meant to be done on the command line.  
+
 (There are helpful commands at the bottom of the instructions)
 
 1. Make a fork of this repository by clicking the "fork" button on the website.
