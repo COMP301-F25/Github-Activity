@@ -21,13 +21,14 @@ Welcome to our collaborative Git exercise! In this activity, you will first work
 
 1. Make a fork of this repository by clicking the "fork" button on the website.
 2. Clone your newly created repository to your computer.
-3. You will need to set the upstream to point at the class COMP301-F25 repo.  There are helpful commands at the bottom of the instructions.
-4. You will see folders for the morning section and the afternoon section. Choose the appropriate folder to work in.  
-5. Create a new branch named `solo/<onyen>`.  
-6. Now navigate to the `solo/` folder (unrelated to branch name). Inside it, create a new text file named `<onyen>.txt`.  
-7. Add your full name inside the file.  
-8. Stage, commit, and push your branch to your fork on GitHub.  
-9. Open a pull request **from your fork’s branch** to the **upstream repository’s `main`** with the title `solo: <onyen>`.  
+3. You will need to set the upstream to point at the class COMP301-F25 repo.  There are a list of commands at the bottom of the instructions to help you do this.
+4. Verify that the origin and remote are properly set by typing `git remote -v`.  Once you have verified that everything looks right, you are ready to begin.
+5. You will see folders for the morning section and the afternoon section. Choose the appropriate folder to work in.  
+6. Create a new branch named `solo/<onyen>`.  
+7. Now navigate to the `solo/` folder (unrelated to branch name). Inside it, create a new text file named `<onyen>.txt`.  
+8. Add your full name inside the file.  
+9. Stage, commit, and push your branch to your fork on GitHub.  
+10. Open a pull request **from your fork’s branch** to the **upstream repository’s `main`** with the title `solo: <onyen>`.  
 
 Each student will have their own file, so there should be no conflicts in this step.
 
