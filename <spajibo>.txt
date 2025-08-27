@@ -1,0 +1,2 @@
+Seton Pajibo
+git add <spajibo>.txt
